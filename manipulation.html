@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="firstname">Hello</h1>
+    <h1 id="lastname">lastname</h1>
+    <h1 id="fullname">fullname</h1>
+
+    <button onclick="setfirstname()">FIRSTNAME</button>
+    <button onclick="setlastname()">LASTNAME</button>
+    <button onclick="setfullname()">FULLNAME</button>
+    <button onclick="setreset()">RESET</button>
+</body>
+<script>
+    let setfirstname=()=>{
+        document.getElementById("firstname").innerText="Ansu";
+    }
+
+    let setlastname=()=>{
+        document.getElementById("lastname").innerText="Kumari"
+    }
+
+    let setfullname=()=>{
+        document.getElementById("fullname").innerText="Ansu Kumari"
+    }
+
+    let setreset=()=>{
+        document.getElementById("firstname").innerText=""
+        document.getElementById("lastname").innerText=""
+        document.getElementById("fullname").innerText=""
+    }
+</script>
+</html>

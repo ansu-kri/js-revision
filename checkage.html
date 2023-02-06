@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="age" type="Number" placeholder="Enter your age">
+    <button onclick="checkage()">Check Age</button>
+    <h1 id="display"></h1>
+</body>
+<script>
+    let checkage=()=>{
+        let enterage=document.getElementById("age").value;
+        if(enterage>=18){
+            document.getElementById("display").innerText="You can drive"
+        }
+        else if(enterage<18){
+            document.getElementById("display").innerText="you can not drive"
+
+        }
+        else{
+            document.getElementById("display").innerText="you are too old"
+        }
+
+    }
+</script>
+</html>
